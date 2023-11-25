@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12933646&assignment_repo_type=AssignmentRepo)
 # All Pairs Shortest Paths
 
 In the lectures, we've seen Dijkstra's algorithm for finding the shortest paths
@@ -25,3 +26,7 @@ test code from other exercises.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+## My Analysis
+
+My implementation uses nested loops. As for the outer loop, which iterates over each vertex $k$, as for inner loops, nested within the outer loop, traverse all pairs of vertices $(i, j)$. These nested loops efficiently updates the shortest paths based on the intermediate vertex $k$, making it a worst case time complexity of $\Theta(V^3)$, where $V$ represents the number of vertices in the graph. 
