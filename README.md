@@ -26,3 +26,7 @@ test code from other exercises.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+## My Analysis
+
+My implementation uses nested loops. As for the outer loop, which iterates over each vertex $k$, as for inner loops, nested within the outer loop, traverse all pairs of vertices $(i, j)$. These nested loops efficiently updates the shortest paths based on the intermediate vertex $k$, making it a worst case time complexity of $\Theta(V^3)$, where $V$ represents the number of vertices in the graph. 
